@@ -1,14 +1,14 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
   title: 'SMA Technologies Help',
-  tagline: 'Template - Product Name',
+  tagline: 'Help',
   url: 'https://help.smatechnologies.com',
-  baseUrl: '/product/path/',
+  baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'smatechnologies',
-  projectName: 'template-product-repo-name',
+  projectName: 'help-app',
   themeConfig: {
     navbar: {
       title: 'Help',
@@ -32,7 +32,7 @@ module.exports = {
           routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
-            'https://github.com/smatechnologies/template-product-repo-name/blob/main',
+            'https://github.com/smatechnologies/help-app/blob/main',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
