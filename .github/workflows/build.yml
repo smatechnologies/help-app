@@ -9,6 +9,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - uses: kheiakiyama/install-azcopy-action@v1
+        with:
+          version: 'v10'
+      - run: azcopy_v10 copy '${{ secrets.HELP_CONTENT_URL }}/content?${{ secrets.HELP_CONTENT_TOKEN }}' '.' --recursive   
       - uses: actions/setup-node@v2
         with:
           node-version: '14'
