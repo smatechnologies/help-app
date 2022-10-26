@@ -2,7 +2,7 @@ name: build
 
 on:
   pull_request:
-    branches: [ ryandimick/test-content-pull ]
+    branches: [ main ]
 
 jobs:
   build:
