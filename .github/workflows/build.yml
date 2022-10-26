@@ -14,7 +14,7 @@ jobs:
       - uses: kheiakiyama/install-azcopy-action@v1
         with:
           version: 'v10'
-      - run: azcopy_v10 copy '${{ secrets.HELP_CONTENT_URL }}/content?${{ secrets.HELP_CONTENT_TOKEN }}' './content/' --recursive                  
+      - run: azcopy_v10 copy '${{ secrets.HELP_CONTENT_URL }}/content?${{ secrets.HELP_CONTENT_TOKEN }}' '.' --recursive                  
       - run: tree
       - run: yarn install
       - run: yarn build
